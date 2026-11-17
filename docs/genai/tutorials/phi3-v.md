@@ -65,12 +65,13 @@ You can download the models here:
 
 3. Run the model
 
-   Run the model with [model-vision.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-vision.py).
+   Run the model with [model-mm.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-mm.py).
 
    ```bash
-   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-vision.py -o model-vision.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/common.py -o common.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-mm.py -o model-mm.py
    pip install pyreadline3
-   python model-vision.py -m gpu/gpu-int4-rtn-block-32 -e dml
+   python model-mm.py -m gpu/gpu-int4-rtn-block-32 -e dml
    ```
 
    Enter the path to an image file and a prompt. The model uses the image and prompt to give you an answer.
@@ -110,12 +111,13 @@ You can download the models here:
 
 4. Run the model
 
-   Run the model with [model-vision.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-vision.py).
+   Run the model with [model-mm.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-mm.py).
 
    ```bash
-   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-vision.py -o model-vision.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/common.py -o common.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-mm.py -o model-mm.py
    pip install pyreadline3
-   python model-vision.py -m gpu/gpu-int4-rtn-block-32 -e cuda
+   python model-mm.py -m gpu/gpu-int4-rtn-block-32 -e cuda
    ```
 
    Enter the path to an image file and a prompt, and the model uses the image and prompt to give you an answer.
@@ -147,12 +149,13 @@ You can download the models here:
 
 3. Run the model
 
-   Run the model with [model-vision.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-vision.py).
+   Run the model with [model-mm.py](https://github.com/microsoft/onnxruntime-genai/blob/main/examples/python/model-mm.py).
 
    ```bash
-   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-vision.py -o model-vision.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/common.py -o common.py
+   curl https://raw.githubusercontent.com/microsoft/onnxruntime-genai/main/examples/python/model-mm.py -o model-mm.py
    pip install pyreadline3
-   python model-vision.py -m cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4 -e cpu
+   python model-mm.py -m cpu_and_mobile/cpu-int4-rtn-block-32-acc-level-4 -e cpu
    ```
 
    Enter the path to an image file and a prompt, and the model uses the image and prompt to give you an answer.
